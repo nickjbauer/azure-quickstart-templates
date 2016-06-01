@@ -78,7 +78,7 @@
   },
   "variables": {
     "location": "[resourceGroup().location]",
-    "publicIPAddressName": "userImagePublicIP",
+    "publicIPAddressName": "[concat(parameters('customVmName'),'PublicIP')]",
     "vmName": "[parameters('customVmName')]",
     "nicName": "[concat(parameters('customVmName'),'Nic')]",
     "publicIPAddressType": "Dynamic",
